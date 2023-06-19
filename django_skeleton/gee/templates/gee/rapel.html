@@ -1,0 +1,34 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections - Rapel NDVI
+{% endblock %} 
+
+{% block css_files %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Rapel River Basin, Chile</h1>
+
+
+
+<head>
+
+    {{ map2.header.render|safe }}
+    
+  </head>
+
+        {{map2.html.render|safe}}
+
+    <script>
+
+      {{ map2.script.render|safe }}
+
+    </script>
+
+    
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections - GEE
+{% endblock %} 
+
+{% block css_files %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>GEE</h1>
+
+
+
+<head>
+
+    <title>Django and GEE</title>
+
+    {{ map.header.render|safe }}
+    
+  </head>
+
+        {{map.html.render|safe}}
+
+    <script>
+
+      {{ map.script.render|safe }}
+
+    </script>
+
+    
+{% endblock %}

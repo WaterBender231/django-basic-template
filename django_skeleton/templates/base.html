@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static "app.css" %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  {% block css_files %} {% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar_items">
+            <li><a href="{% url 'landing-page' %}">Home</a></li>
+            <li><a href="{% url 'plotly-graphs-page' %}">Plotly</a></li>
+            <li><a href="{% url 'gee_demo-page' %}">GEE</a></li>
+            <li><a href="#Shiny">Shiny</a></li>
+            <li><a href="{% url 'leaflet-map-page' %}">Leaflet</a></li> 
+        </ul>
+    </nav>
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

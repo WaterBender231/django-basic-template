@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections
+{% endblock %} 
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "landing/index.css" %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="box_container">
+    <div class="box">
+        <p>Plotly</p>
+    </div>
+
+    <div class="box">
+        <p>GEE</p>
+    </div>
+
+    <div class="box">
+        <p>Shiny</p>
+    </div>
+
+    <div class="box">
+        <p>Leaflet</p>
+    </div>
+  </div>
+  
+
+{% endblock %}

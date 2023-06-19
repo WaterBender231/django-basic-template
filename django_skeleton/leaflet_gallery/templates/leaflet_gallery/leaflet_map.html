@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections - Leaflet Maps
+{% endblock %} 
+
+{% block css_files %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Hi Cologne!</h1>
+
+
+{% autoescape off %}
+{{ map_html | safe }}
+{% endautoescape %}
+
+    
+{% endblock %}

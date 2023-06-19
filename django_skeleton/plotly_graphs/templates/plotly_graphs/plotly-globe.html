@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections - Plotly Graphs
+{% endblock %} 
+
+{% block css_files %}
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>Plotly Maps</h1>
+
+
+{% autoescape off %}
+{{ plot_div }}
+{% endautoescape %}
+
+    
+{% endblock %}

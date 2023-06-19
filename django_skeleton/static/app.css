@@ -1,0 +1,31 @@
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar_items {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar_items li {
+    margin-right: 1rem; /* Adjust the spacing between li items */
+    margin-left: 1rem;
+}
+
+.navbar_items li a {
+    letter-spacing: .1rem; /* Adjust the letter spacing */
+    text-decoration: none; /* Remove underline */
+    color: #343541;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.navbar_items li a:hover {
+    color: #006DAD; /* Change to the desired hover color */
+}

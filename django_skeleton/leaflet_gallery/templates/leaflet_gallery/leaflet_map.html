@@ -6,6 +6,7 @@ Django Connections - Leaflet Maps
 {% endblock %} 
 
 {% block css_files %}
+<link rel="stylesheet" href="{% static "leaflet_gallery/leaflet_map.css" %}"> 
 {% endblock %}
 
 
@@ -20,8 +21,9 @@ Django Connections - Leaflet Maps
 {% endautoescape %}
 </div>
 
-<div class="gee_thanks">
+<div class="leaflet_thanks">
     <p> Thanks for visiting! </p>
 </div>
-    
+
+
 {% endblock %}

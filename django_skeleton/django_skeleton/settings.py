@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'gee',
     'plotly_graphs',
     'leaflet_gallery',
+    'shiny_r',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

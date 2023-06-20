@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Django Connections - Shiny R
+{% endblock %} 
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "shiny_r/shiny_r.css" %}"> 
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="iframe-container">
+    {% verbatim %}
+    <iframe src="https://owasa.shinyapps.io/owasashinyapps/" allowfullscreen></iframe>
+    {% endverbatim %}
+</div>
+
+
+{% endblock %}

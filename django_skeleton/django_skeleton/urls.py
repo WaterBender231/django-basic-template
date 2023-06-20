@@ -21,5 +21,6 @@ urlpatterns = [
     path("", include("landing.urls")),
     path("", include("gee.urls")),
     path("", include("plotly_graphs.urls")),
-    path("", include("leaflet_gallery.urls"))
+    path("", include("leaflet_gallery.urls")),
+    path("", include("shiny_r.urls"))
 ]

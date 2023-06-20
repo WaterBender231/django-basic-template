@@ -21,8 +21,8 @@ def leaflet_map(request):
     context = {
         'map_html': map_html
     }
-
+    
     # Render the template with the map
-    return render(request, 'map_template.html', context)
+    return render(request, "leaflet_gallery/leaflet_map.html", context)
 
 

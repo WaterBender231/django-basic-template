@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'landing',
     'gee',
     'plotly_graphs',
-    'leaflet',
+    'leaflet_gallery',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

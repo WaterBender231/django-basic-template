@@ -6,6 +6,7 @@ Django Connections - Plotly Graphs
 {% endblock %} 
 
 {% block css_files %}
+<link rel="stylesheet" href="{% static "plotly_graphs/plotly-globe.css" %}"> 
 {% endblock %}
 
 
@@ -14,10 +15,10 @@ Django Connections - Plotly Graphs
 
 <h1>Plotly Maps</h1>
 
-
-{% autoescape off %}
-{{ plot_div }}
-{% endautoescape %}
-
+<div class="plotly_map">
+    {% autoescape off %}
+    {{ plot_div }}
+    {% endautoescape %}
+</div>
     
 {% endblock %}

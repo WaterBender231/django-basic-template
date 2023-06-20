@@ -6,31 +6,30 @@ Django Connections - GEE
 {% endblock %} 
 
 {% block css_files %}
+<link rel="stylesheet" href="{% static "gee/gee-demo.css" %}"> 
 {% endblock %}
 
 
 
 {% block content %}
 
-<h1>GEE</h1>
-
-
+<h1>Google Earth Engine Connection</h1>
 
 <head>
+  <title>Django and GEE</title>
+  {{ map.header.render|safe }}  
+</head>
 
-    <title>Django and GEE</title>
+<div class="gee_wrapper">
+  {{map.html.render|safe}}
+</div>
 
-    {{ map.header.render|safe }}
-    
-  </head>
+<script>
+  {{ map.script.render|safe }}
+</script>
 
-        {{map.html.render|safe}}
-
-    <script>
-
-      {{ map.script.render|safe }}
-
-    </script>
-
+<div class="gee_thanks">
+  <p> Thanks for visiting! </p>
+</div>
     
 {% endblock %}
